@@ -35,14 +35,16 @@ body {
 
 .lamp {
     padding: 15px;
-    font-size: 60pt;
-    font-family: "Secondary", serif;
-    border-radius: 15px;
     transition: .3s;
 }
 
+.lamp > span {
+    font-size: 60pt;
+    font-family: "Secondary", serif;
+}
+
 .lamp-mute {
-    color: #8A797F;
+    color: #5E575E;
 }
 
 .lamp-flash {
@@ -52,20 +54,48 @@ body {
                     #FF2D95 0 0 50px, #FF2D95 0 0 75px;
 }
 
+.lamp-charge {
+    color: #FF2D95;
+    text-shadow: #322D34 0 0 20px, #322D34 0 0 30px, #322D34 0 0 40px,
+                    #322D34 0 0 50px, #322D34 0 0 75px;
+}
+
+.lamp-item {
+    transition: .3s;
+}
+
+.item-flash {
+    color: #FFFFFF;
+    text-shadow: #FFF 0 0 5px, #FFF 0 0 10px, #FFF 0 0 15px,
+    #FF2D95 0 0 20px, #FF2D95 0 0 30px, #FF2D95 0 0 40px,
+    #FF2D95 0 0 50px, #FF2D95 0 0 75px;
+}
+
+.item-charge {
+    color: #FF2D95;
+    text-shadow: #322D34 0 0 20px, #322D34 0 0 30px, #322D34 0 0 40px,
+    #322D34 0 0 50px, #322D34 0 0 75px;
+}
+
 .lamp-box {
     border-radius: 15px;
     width: max-content;
-    border: 15px solid #8A797F;
+    border: 15px solid #5E575E;
     transition: .3s;
 }
 
 .lamp-box-mute {
-    border-color: #8A797F;
+    border-color: #5E575E;
 }
 
 .lamp-box-flash {
     border-color: #FFFFFF;
-    box-shadow: 0 0 15px 9px rgba(255,45,149,0.79), inset 0 0 15px 9px rgba(255,45,149,0.79);
+    box-shadow: 0 0 15px 9px #FF2D95, inset 0 0 15px 9px #FF2D95;
+}
+
+.lamp-box-charge {
+    border-color: #FF2D95;
+    box-shadow: 0 0 15px 15px #322D34, inset 0 0 15px 15px #322D34;
 }
 
 .back-mute {
