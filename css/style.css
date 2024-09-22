@@ -30,7 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: .5s;
+    transition: .3s;
 }
 
 .lamp {
@@ -38,7 +38,7 @@ body {
     font-size: 60pt;
     font-family: "Secondary", serif;
     border-radius: 15px;
-    transition: .5s;
+    transition: .3s;
 }
 
 .lamp-mute {
@@ -56,7 +56,7 @@ body {
     border-radius: 15px;
     width: max-content;
     border: 15px solid #8A797F;
-    transition: .5s;
+    transition: .3s;
 }
 
 .lamp-box-mute {
