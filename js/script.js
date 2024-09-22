@@ -1,8 +1,8 @@
-const pattern = 'mfffmmmfffmmmfmfmfmffffffmfmf'; // Задаём паттерна мерцания,
+const pattern = 'mfffffmmmfffmmmfffmmmfmfmfffffffffffffmmfmf'; // Задаём паттерна мерцания,
                                 // где m[mute] - отключённое состояние, а f[flash] - включённое
 const element = document.querySelector('.lamp'); // Получаем элемент-лампу
 const border = document.querySelector('.lamp-box'); // Получаем элемент-контернер лампы
-const background = document.querySelector('.wrapper'); //Получаем элемент-бэкграунд
+const background = document.querySelector('.back'); //Получаем элемент-бэкграунд
 let index = 0; // Индекс текущего символа в паттерне
 
 function flicker() {

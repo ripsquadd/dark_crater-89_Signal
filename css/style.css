@@ -24,24 +24,25 @@ body {
     background-attachment: fixed, fixed;
 }
 
-.lamp {
-    padding: 15px;
-    font-size: 60pt;
-    font-family: "Secondary", serif;
-    border-radius: 15px;
-}
-
-.wrapper {
+.back {
     min-height: 100vh;
     padding: 55px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: .5s;
+}
+
+.lamp {
+    padding: 15px;
+    font-size: 60pt;
+    font-family: "Secondary", serif;
+    border-radius: 15px;
+    transition: .5s;
 }
 
 .lamp-mute {
     color: #8A797F;
-    transition: .5s;
 }
 
 .lamp-flash {
@@ -49,32 +50,28 @@ body {
     text-shadow: #FFF 0 0 5px, #FFF 0 0 10px, #FFF 0 0 15px,
                     #FF2D95 0 0 20px, #FF2D95 0 0 30px, #FF2D95 0 0 40px,
                     #FF2D95 0 0 50px, #FF2D95 0 0 75px;
-    transition: .5s;
-}
-
-.back-mute {
-    background-color: rgba(30, 30, 30, 0.9);
-    transition: .5s;
-}
-
-.back-flash {
-    background-color: rgba(30, 30, 30, 0);
-    transition: .5s;
 }
 
 .lamp-box {
     border-radius: 15px;
     width: max-content;
     border: 15px solid #8A797F;
+    transition: .5s;
 }
 
 .lamp-box-mute {
     border-color: #8A797F;
-    transition: .5s;
 }
 
 .lamp-box-flash {
     border-color: #FFFFFF;
     box-shadow: 0 0 15px 9px rgba(255,45,149,0.79), inset 0 0 15px 9px rgba(255,45,149,0.79);
-    transition: .5s;
+}
+
+.back-mute {
+    background-color: rgba(30, 30, 30, 0.9);
+}
+
+.back-flash {
+    background-color: rgba(30, 30, 30, 0);
 }
